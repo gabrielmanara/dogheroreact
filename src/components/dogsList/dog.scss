@@ -1,0 +1,61 @@
+.dog {
+    padding: 0 25px;
+    &__photo {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow:  0px 17px 34px -1px rgba(219,215,250,1);
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: .7;
+            background: linear-gradient(to bottom, rgba(125,185,232,0) 0,rgba(116,157,232,0) 50%,rgba(87,62,230,1) 100%);
+        }
+    }
+
+    &__category {
+        position: absolute;
+        background: #573EE6;
+        padding: 10px 20px;
+        border-radius: 6px;
+        right: 10px;
+        top: 10px;
+        color: #fff;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 25px;
+        color: #33375d;
+    }
+
+    &__name {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    &__type {
+        color: #b0b2c6;
+    }
+
+    &__about {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &__badge {
+        padding: 10px;
+        border-radius: 6px;
+        margin-right: 10px;
+        border: 2px solid #e9e8ee;
+        background: #f5f6fa;
+    }
+}

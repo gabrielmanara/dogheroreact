@@ -1,0 +1,6 @@
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px; }
+  .l-header .filter-button {
+    cursor: pointer; }
